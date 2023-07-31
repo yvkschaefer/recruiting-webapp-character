@@ -3,6 +3,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -27,13 +28,39 @@
 }
 
 .App-section {
-  flex: 1 1 0;
   background-color: hsl(220deg 13% 13%);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+.new-character {
+  border: 1px solid white;
+}
+.new-character section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 0.5px solid white;
+}
+.requirements-column section {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section-container {
+  border: 0.5px solid white;
+}
+.activated {
+  color: red;
+}
+.section-container h2 {
+  margin-bottom: 1em;
+}
+.do-not-display {
+  display: none;
+  width: 0;
+}
+.display {
+  display: block
 }
 
 @keyframes App-logo-spin {
